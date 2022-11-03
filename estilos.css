@@ -4,51 +4,59 @@
 
    /* GENERAL FALTA LINKEAR TIPO */
 *{
+    margin: 0px;
+    padding-top: 0px;
+    font-family: poppins;
+    
+}
+
+body {
+    background-color: #1E1E1E;
+    background-size:100% auto;
+    background-attachment: scroll;
 	margin: 0px;
 	padding-top: 0px;
-	background-size:100% auto;
-	background-attachment: scroll;
 }
 
 
 .carrusel-1 .carrusel-2 .carrusel-3 .carrusel-4 {
-	position: absolute;
-	left: 452px;
-	top: 864px;
-	width: 1000px;
-	height: 400px;
+    position: absolute;
+    left: 452px;
+    top: 864px;
+    width: 1000px;
+    height: 400px;
 }
 
 h1 {
-	font-family: "Oxanium";
-	color: white;
-	text-align: center;
-	font-size: 45px;
+    font-family: "Oxanium";
+    color: white;
+    text-align: center;
+    font-size: 45px;
 }
 
 .sol {
 
-
 }
 
 .flex-container {
-	flex-direction: column;
-	justify-content: center;
-	margin: 10px 10px 10px 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
     align-items: center;
     padding-bottom: 10px;
  
 }
 
 .botonera {
-	background: #7199FB;
-	border-radius: 80px;
-	font-family: "Oxanium";
-	font-size: 37px;
-	text-decoration: none;
-	color:black;
-	
+    background: #7199FB;
+    border-radius: 80px;
+    font-family: "Oxanium";
+    font-size: 37px;
+    text-decoration: none;
+    color:black;
+    
 }
+
 
 .texto-nosotros {
 	font-family: "Poppins";
@@ -108,4 +116,5 @@ nav a {
 	font-weight: 700;
 	font-family:poppins;
 }
+
 
