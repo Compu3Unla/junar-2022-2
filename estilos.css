@@ -90,8 +90,8 @@ footer{
     position: absolute;
     width: 1152px;
     height: 100px;
-    left: -121px;
-    top: 1260px;
+    left: 0px;
+    top: 1305px;
 }
 .iconos-footer{
 	display: flex;
@@ -115,7 +115,7 @@ footer{
 	color: #EAE9E4;
 }
 
-/*------------- TU MAIN AQUI ------------- */
+/*------------- A PARTIR DE ACA PUEDES TOCAR ------------- */
 
 /*--------- MAIN INDEX -------------- */
 
