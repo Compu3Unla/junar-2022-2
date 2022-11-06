@@ -7,19 +7,16 @@
 *{
 	margin: 0px;
 	padding-top: 0px;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 }
 body {
 	background-color: #1E1E1E;
 	background-size:100% auto;
 	background-attachment: scroll;
 }
-html {
-	scroll-behavior: smooth;
-}
 
 /*------------- HEADER ------------- */
-header {
+header{
     margin: 0px;
     position: absolute;
     width: 1152px;
@@ -46,9 +43,10 @@ header {
 	background: #0A9372;
 	position: absolute;
 }
-div button p{
+
+div button a{
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 15px;
 	line-height:22px;
 	display: flex;
@@ -58,7 +56,7 @@ div button p{
 }
 
 /*------------------ NAV -------------------- */
-.nav{
+header nav{
 	position: absolute;
 	width: 1152px;
 	height: 40px;
@@ -66,45 +64,52 @@ div button p{
 	background-color:#0A9372;
 }
 nav ul li{
-	display: inline;
-    position: absolute;
-	width: 1152px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
+	display: inline-flex;
 }
+
 nav a{
-	color: #EAE9E4;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 30px;
-	align-content: center;
+	flex-direction: row;
+	justify-content: space-between;
 }
+
 nav a:hover{
 	transition: 0.5s;
 	color:yellow;
 }
+.nav{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 40px;
+	color:#EAE9E4;
+}
+
 
 /*--------------- FOOTER -------------- */
-footer{
+.footer{
     position: absolute;
     width: 1152px;
     height: 100px;
-    left: 0px;
-    top: 1305px;
+    top: 1332px;
 }
 .iconos-footer{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction:row;
+	align-content: center;
 	position: absolute;
 	width: 187px;
 	height: 31px;
 	left: 482px;
 	top: 24px;
 }
-.Copyright{
-	font-family: 'Poppins';
+
+h5{
+	position:absolute;
+	align-content: center;
+	width: 655px;
+	height: 20px;
+	left: 248px;
+	top: 64px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
