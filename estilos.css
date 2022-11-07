@@ -54,7 +54,8 @@ button a{
 /*------------------ NAV -------------------- */
 nav{
 	display: flex;
-	justify-content:space-between;
+	flex-direction: row;
+	justify-content: center;
 	padding:0px;
 	background-color:#0A9372;
 }
@@ -80,18 +81,18 @@ nav a:hover{
 
 /*--------------- FOOTER chequear -------------- */
 footer{
-	position: absolute;
-	top: 1332px;
+	display: flex;
+	flex-direction:column;
 	height: 100px;
 	background-image:url("images/footer.jpg");
-	mix-blend-mode: normal;
+	mix-blend-mode:normal;
 	background-size: cover;
 }
 .iconos-footer{
 	display: flex;
 	flex-direction:row;
 	align-content: center;
-	position: absolute;
+	
 	width: 187px;
 	height: 31px;
 	left: 482px;
@@ -99,7 +100,8 @@ footer{
 }
 
 h5{
-	position:absolute;
+	display: flex;
+	flex-direction:row;
 	align-content: center;
 	width: 655px;
 	height: 20px;
@@ -109,12 +111,10 @@ h5{
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	display: flex;
 	align-items: center;
 	text-align: center;
 	color: #EAE9E4;
 }
-
 /*------------- A PARTIR DE ACA PUEDES TOCAR ------------- */
 
 /*--------- MAIN INDEX -------------- */
@@ -165,3 +165,79 @@ h1 {
 	line-height: 33px;
 	color: #FFFFFF;
 }
+
+
+/*------------- INICIAR SESION ------------- */
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 450px;
+	padding: 100px;
+	margin: auto;
+	font-family: "Montserrat";
+	font-weight: 300;
+	color: white;
+}
+
+.form a {
+	color: #EAEAEA;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.form a:hover {
+	color: #F88312;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 80px;
+}
+
+.botones {
+	color: #EAEAEA;
+	width: 335px;
+	background: #F88312;
+	border: none;
+	padding: 12px;
+	margin: 15px;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	border-radius: 30px;
+	transition: .5s all ease;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.botones, .secundario {
+	webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 500ms ease-in-out;
+}
+
+.botones:hover, .secundario:hover {
+	box-shadow: 0 0 40px 10px /*#FFAF62*/ rgba(234,234,234,0.70) inset;
+	z-index: -1;
+}
+
+.controls {
+	width: 70%;
+	background: #EAEAEA;
+	padding: 10px;
+	margin: 14px;
+	border-radius: 10px;
+	border: 0;
+	font-family: "Montserrat";
+	font-size: 18px;
+	outline: none;
+}
+
