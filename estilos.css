@@ -8,8 +8,12 @@
 	margin: 0px;
 	padding-top: 0px;
 	font-family: 'Poppins';
+	text-decoration: none;
 }
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-color: #1E1E1E;
 	background-size:100% auto;
 	background-attachment: scroll;
@@ -17,24 +21,16 @@ body {
 
 /*------------- HEADER ------------- */
 header{
-    margin: 0px;
-    position: absolute;
-    width: 1152px;
-    height: 182px;
-    mix-blend-mode: normal;
-}
-.fondo-logo{
-	display: flex;
+    display: flex;
 	flex-direction:column;
+	margin: 0px;
+	height: 180px;
+	background-image: url("images/header.jpg");
+	mix-blend-mode: normal;
+	background-size: cover;
 }
-.logo{
-	position: absolute;
-	left: 33.85%;
-	right: 33.16%;
-	top: 5.56%;
-	bottom: 11.11%;
-}
-.cuenta{
+
+button{
 	width:150px;
 	height:30px;
 	top:15px;
@@ -44,39 +40,31 @@ header{
 	position: absolute;
 }
 
-div button a{
+button a{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 15px;
 	line-height:22px;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
 	text-align: center;
 	color: #FFFFFF;
 }
 
 /*------------------ NAV -------------------- */
-header nav{
-	position: absolute;
-	width: 1152px;
-	height: 40px;
-	top: 180px;
+nav{
+	display: flex;
+	justify-content:space-between;
+	padding:0px;
 	background-color:#0A9372;
 }
 nav ul li{
 	display: inline-flex;
-}
-
-nav a{
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-nav a:hover{
-	transition: 0.5s;
-	color:yellow;
-}
-.nav{
+nav a{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
@@ -84,13 +72,20 @@ nav a:hover{
 	color:#EAE9E4;
 }
 
+nav a:hover{
+	transition: 0.5s;
+	color:yellow;
+}
 
-/*--------------- FOOTER -------------- */
-.footer{
-    position: absolute;
-    width: 1152px;
-    height: 100px;
-    top: 1332px;
+
+/*--------------- FOOTER chequear -------------- */
+footer{
+	position: absolute;
+	top: 1332px;
+	height: 100px;
+	background-image:url("images/footer.jpg");
+	mix-blend-mode: normal;
+	background-size: cover;
 }
 .iconos-footer{
 	display: flex;
@@ -144,6 +139,7 @@ h1 {
 }
 
 .flex-container {
+	display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px 10px 10px 10px;
