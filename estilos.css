@@ -83,7 +83,7 @@ nav a{
 }
 
 nav a:hover{
-	transition: 0.5s;
+	transition: 0.2s;
 	color:yellow;
 }
 
@@ -125,11 +125,18 @@ footer{
     height: 400px;
 }
 .carrusel{
+	margin-top: 50px;
 	justify-content: center;
     flex-direction: column;
     display: flex;
     align-items: center;
     width: 100%;
+}
+.sol{
+	margin-top: 50px;
+	font-weight: 200px;
+	font-size: 20px;
+	color: #EAE9E4;
 }
 
 h1 {
