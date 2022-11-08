@@ -2,12 +2,12 @@
 /* CSS Document */
 
 /*---------- GENERAL ------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
 	margin: 0px;
 	padding-top: 0px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 }
 body {
@@ -24,10 +24,14 @@ header{
     display: flex;
 	flex-direction:column;
 	margin: 0px;
-	height: 180px;
+	height: 175px;
 	background-image: url("images/header.jpg");
 	mix-blend-mode: normal;
 	background-size: cover;
+}
+.logo{
+	align-content: center;
+	margin: 10px 386px 20px 392px;
 }
 
 button{
@@ -52,23 +56,22 @@ button a{
 }
 
 /*------------------ NAV -------------------- */
-nav{
+nav ul{
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding:0px;
+	align-content: center;
+	text-align: center;
 	background-color:#0A9372;
 }
 nav ul li{
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: inline;
 }
 
 nav a{
+	display: block;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 18px;
+	padding: 0px 60px;
 	line-height: 40px;
 	color:#EAE9E4;
 }
@@ -81,38 +84,25 @@ nav a:hover{
 
 /*--------------- FOOTER chequear -------------- */
 footer{
-	display: flex;
-	flex-direction:column;
+	width: 100%;
 	height: 100px;
 	background-image:url("images/footer.jpg");
 	mix-blend-mode:normal;
 	background-size: cover;
 }
-.iconos-footer{
-	display: flex;
-	flex-direction:row;
+.iconos{
 	align-content: center;
-	
-	width: 187px;
-	height: 31px;
-	left: 482px;
-	top: 24px;
+	padding: 10px 483px 45px 483px;
+	margin-right: 55px;
 }
 
-h5{
-	display: flex;
-	flex-direction:row;
+.copyright{
+	padding: 60px 257px 20px 257px;
 	align-content: center;
-	width: 655px;
-	height: 20px;
-	left: 248px;
-	top: 64px;
-	font-style: normal;
-	font-weight: 400;
+	display: flex;
+	font-weight: 400px;
 	font-size: 14px;
 	line-height: 21px;
-	align-items: center;
-	text-align: center;
 	color: #EAE9E4;
 }
 /*------------- A PARTIR DE ACA PUEDES TOCAR ------------- */
