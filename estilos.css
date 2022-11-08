@@ -24,7 +24,7 @@ header{
     display: flex;
 	flex-direction:column;
 	margin: 0px;
-	height: 175px;
+	height: 200px;
 	background-image: url("images/header.jpg");
 	mix-blend-mode: normal;
 	background-size: cover;
@@ -56,11 +56,17 @@ button a{
 }
 
 /*------------------ NAV -------------------- */
+nav{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	background-color:#0A9372;
+}
 nav ul{
 	display: flex;
 	align-content: center;
 	text-align: center;
-	background-color:#0A9372;
 }
 nav ul li{
 	display: inline;
@@ -86,18 +92,20 @@ nav a:hover{
 footer{
 	width: 100%;
 	height: 100px;
+	margin-top: 50px;
 	background-image:url("images/footer.jpg");
 	mix-blend-mode:normal;
 	background-size: cover;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .iconos{
 	align-content: center;
-	padding: 10px 483px 45px 483px;
-	margin-right: 55px;
 }
 
 .copyright{
-	padding: 60px 257px 20px 257px;
 	align-content: center;
 	display: flex;
 	font-weight: 400px;
@@ -116,16 +124,19 @@ footer{
     width: 1000px;
     height: 400px;
 }
+.carrusel{
+	justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 h1 {
     font-family: "Oxanium";
     color: white;
     text-align: center;
     font-size: 45px;
-}
-
-.sol {
-
 }
 
 .flex-container {
@@ -136,6 +147,13 @@ h1 {
     align-items: center;
     padding-bottom: 10px;
 
+}
+.flex-container article {
+	justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .botonera {
