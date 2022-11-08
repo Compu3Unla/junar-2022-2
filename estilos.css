@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /*---------- GENERAL ------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
 	margin: 0px;
@@ -172,25 +172,23 @@ h1 {
 
 .form {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: center;
-	width: 450px;
-	padding: 100px;
-	margin: auto;
-	font-family: "Montserrat";
-	font-weight: 300;
-	color: white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+	padding: 150px 200px 124px 553px;
+    margin: auto;
+    font-family: "Montserrat";
+    font-weight: 300;
+    color:#EAE9E4;
 }
-
 .form a {
-	color: #EAEAEA;
+	color: #0A9372;
 	font-weight: 500;
 	text-decoration: none;
 }
 
 .form a:hover {
-	color: #F88312;
+	color: #0A9372;
 	font-weight: 500;
 	font-size: 16px;
 	text-decoration: none;
