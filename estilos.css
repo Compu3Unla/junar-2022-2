@@ -239,3 +239,73 @@ h1 {
 	outline: none;
 }
 
+
+
+/*------------- ANIMACION ------------- */
+.personaje {
+		height: 400px;
+		width: 400px;
+		background: url("images/animacion.png");
+		position: absolute;
+    	left: 10%;
+    	top: 13%;
+		margin: 0 auto;
+		/*background-position: -800px 0;*/
+		animation: correr 1s steps(5) infinite;
+		
+}
+
+@keyframes correr{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -2000px;
+	}
+}
+	
+
+.animacion {
+	height: 920px;
+	background: url("images/fondo_index.png");
+	background-size: cover;
+	
+}
+
+.logo_index{
+	width: 501px;
+    height: 200px;
+    background: url("images/index_logo.png");
+    position: absolute;
+    left: 36%;
+    top: 17%;
+}
+
+.index_boton{
+	width: 381px;
+    height: 106px;
+    background: url("images/index_boton.png");
+    position: absolute;
+    left: 42%;
+    top: 55%;
+}
+
+.index_deco1{
+	width: 262px;
+    height: 405px;
+    background: url("images/index1.png");
+    position: absolute;
+    left: 70%;
+    top: 5%;
+	
+}
+
+.index_deco2{
+	width: 328px;
+    height: 386px;
+    background: url("images/index2.png");
+    position: absolute;
+    left: 3%;
+    top: 50%;
+	
+}
