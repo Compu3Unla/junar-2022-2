@@ -132,12 +132,6 @@ footer{
     align-items: center;
     width: 100%;
 }
-.sol{
-	margin-top: 50px;
-	font-weight: 200px;
-	font-size: 20px;
-	color: #EAE9E4;
-}
 
 h1 {
     font-family: "Oxanium";
@@ -174,12 +168,8 @@ h1 {
 }
 
 
-.texto-nosotros {
-	font-family: "Poppins";
-	font-size: 22px;
-	line-height: 33px;
-	color: #FFFFFF;
-}
+
+
 
 
 /*------------- INICIAR SESION ------------- */
@@ -323,4 +313,30 @@ h1 {
     left: 3%;
     top: 50%;
 	
+}
+
+
+
+
+.artistasContentContainer{
+	display: flex;
+	margin-top: 3%;
+}
+
+.derechaContentContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+.sloganContainer{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.textContainer{
+	color: white;
+	font-size: 2.5vh;
+	width: 70%;
+	margin-bottom: 40px;
 }
