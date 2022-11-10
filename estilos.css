@@ -19,7 +19,8 @@ body {
 	background-attachment: scroll;
 }
 
-/*------------- HEADER ------------- */
+/*------------- BASICOS HTML ---------------- */
+/*-----HEADER ------ */
 header{
     display: flex;
 	flex-direction:column;
@@ -34,7 +35,7 @@ header{
 	margin: 10px 386px 20px 392px;
 }
 
-button{
+#usuario{
 	width:150px;
 	height:30px;
 	top:15px;
@@ -44,18 +45,17 @@ button{
 	position: absolute;
 }
 
-button a{
-	font-style: normal;
+#usuario a{
 	font-weight: 700;
 	font-size: 15px;
-	line-height:22px;
+	line-height:30px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	text-align: center;
 	color: #FFFFFF;
 }
 
-/*------------------ NAV -------------------- */
+/*----- NAV ------- */
 nav{
 	display: flex;
 	align-content: center;
@@ -71,24 +71,21 @@ nav ul{
 nav ul li{
 	display: inline;
 }
-
 nav a{
 	display: block;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	padding: 0px 60px;
-	line-height: 40px;
+	line-height:40px;
 	color:#EAE9E4;
 }
-
 nav a:hover{
-	transition: 0.2s;
-	color:yellow;
+	color:#FFED07;
+	font-size: 20px;
 }
 
-
-/*--------------- FOOTER chequear -------------- */
+/*------ FOOTER ------ */
 footer{
 	width: 100%;
 	height: 100px;
@@ -104,7 +101,6 @@ footer{
 .iconos{
 	align-content: center;
 }
-
 .copyright{
 	align-content: center;
 	display: flex;
@@ -113,68 +109,95 @@ footer{
 	line-height: 21px;
 	color: #EAE9E4;
 }
-/*------------- A PARTIR DE ACA PUEDES TOCAR ------------- */
 
-/*--------- MAIN INDEX -------------- */
+/*--------------------------- A PARTIR DE ACA PUEDES TOCAR -------------------------------- */
 
-.carrusel-1 .carrusel-2 .carrusel-3 .carrusel-4 {
-    position: absolute;
-    left: 452px;
-    top: 864px;
-    width: 1000px;
-    height: 400px;
-}
+/*-------------------- MAIN INICIO ---------------------- */
+/*---carrusel---*/
 .carrusel{
-	margin-top: 50px;
-	justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    width: 100%;
+    width:100%;
+	margin-top:50px;
+    overflow: hidden;
 }
 
-h1 {
-    font-family: "Oxanium";
-    color: white;
-    text-align: center;
-    font-size: 45px;
+.carrusel ul{
+	display: flex; 
+	padding: 0px;
+	animation: carrusel 8s infinite alternate;
+	animation-timing-function:ease;     
 }
+.carrusel li{
+	width: 100%;
+	list-style: none;
+	padding:0px;
+}
+@keyframes carrusel {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -100%;}
+	70% {margin-left: -100%;}
+	
+	75% {margin-left: -100%;}
+	100% {margin-left: -100%;}
 
-.flex-container {
+/*----1er section---- */
+#scrolear{
+	
+}
+.solfeliz{
+	padding: 0px 735px 539px 257px;
+}
+.titular2{
+	display:flex;
+	align-items:flex-end;
+	padding:56px 431px 591px 200px;
+	font-family:'Oxanium';
+	font-weight:200;
+	font-size:32px;
+	line-height:40px;
+	color: #FFED07;
+}
+/*----2do section---- */
+.titular3{
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 10px 10px 10px;
     align-items: center;
     padding-bottom: 10px;
-
-}
-.flex-container article {
-	justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
     width: 100%;
 }
-
-.botonera {
-    background: #7199FB;
-    border-radius: 80px;
-    font-family: "Oxanium";
-    font-size: 37px;
-    text-decoration: none;
-    color:black;
-
+#botonagenda{
+	position: absolute;
+	width: 278px;
+	height: 50px;
+	left: 735px;
+	top: 1287px;
+	border-radius: 80px;    
+	background:#EB5A08;
+	/*margin-top:20px?*/
+}
+#botonagenda a{
+	font-family:'Oxanium';
+	color:#1E1E1E;
+	font-weight:500;
+	font-size:20px;
+	line-height:25px;
+	padding: 15px 26px 16px 26px;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+}
+#botontest a:hover{
+    color:#EAE9E4;
+	font-size:30px;
 }
 
 
-
-
-
-
-/*------------- INICIAR SESION ------------- */
-
-
+/*------------------------ MAIN INICIAR SESION ----------------------------- */
 .form {
 	display: flex;
     flex-direction: column;
@@ -244,9 +267,7 @@ h1 {
 	outline: none;
 }
 
-
-
-/*------------- ANIMACION ------------- */
+/*----------------------------- INDEX --------------------------------------- */
 .personaje {
 		height: 400px;
 		width: 400px;
@@ -256,8 +277,7 @@ h1 {
     	top: 13%;
 		margin: 0 auto;
 		/*background-position: -800px 0;*/
-		animation: correr 1s steps(5) infinite;
-		
+		animation: correr 1s steps(5) infinite;	
 }
 
 @keyframes correr{
@@ -274,7 +294,6 @@ h1 {
 	height: 920px;
 	background: url("images/fondo_index.png");
 	background-size: cover;
-	
 }
 
 .logo_index{
@@ -302,7 +321,6 @@ h1 {
     position: absolute;
     left: 70%;
     top: 5%;
-	
 }
 
 .index_deco2{
@@ -312,31 +330,4 @@ h1 {
     position: absolute;
     left: 3%;
     top: 50%;
-	
-}
 
-
-
-
-.artistasContentContainer{
-	display: flex;
-	margin-top: 3%;
-}
-
-.derechaContentContainer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
-}
-.sloganContainer{
-	margin-top: 30px;
-	margin-bottom: 20px;
-}
-
-.textContainer{
-	color: white;
-	font-size: 2.5vh;
-	width: 70%;
-	margin-bottom: 40px;
-}
