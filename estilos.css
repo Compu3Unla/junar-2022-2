@@ -107,75 +107,121 @@ footer{
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 21px;
-	color: #EAE9E4;
+	background-color: #EAE9E4;
+	color:#1E1E1E;
 }
 
 /*--------------------------- A PARTIR DE ACA PUEDES TOCAR -------------------------------- */
 
 /*-------------------- MAIN INICIO ---------------------- */
+
 /*---carrusel---*/
 .carrusel{
-    width:100%;
+	width: 1152px;
+	height: 400px;
 	margin-top:50px;
-    overflow: hidden;
-}
-
-.carrusel ul{
-	display: flex; 
 	padding: 0px;
-	animation: carrusel 8s infinite alternate;
+	display: flex;
+	align-self: center;
+	overflow: hidden;
+}
+.carrusel ul{
+	display: flex;
+	align-self: center;
+	padding:0px; 
+	animation: carrusel 12s infinite alternate;
 	animation-timing-function:ease;     
 }
 .carrusel li{
-	width: 100%;
+	padding: 0px;
 	list-style: none;
-	padding:0px;
 }
-@keyframes carrusel {
+
+@keyframes carrusel{
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
 	
 	25% {margin-left: -100%;}
 	45% {margin-left: -100%;}
 	
-	50% {margin-left: -100%;}
-	70% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
 	
-	75% {margin-left: -100%;}
-	100% {margin-left: -100%;}
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
+
 /*----1er section----*/
-.solfeliz{
-	padding: 0px 735px 539px 257px;
+.saludo{
+	position: absolute;
+	width: 400px;
+	height: 60px;
+	left: 364px;
+	top: 575px;
 }
-.titular2{
+#scrolear{
+	width:596px;
+    height: 146px;
+	padding: 5px 278px 0px 278px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#scrolear p{
+	padding: 80px 0px 80px 28px;
 	display:flex;
 	align-items:flex-end;
-	padding:56px 431px 591px 200px;
 	font-family:'Oxanium';
 	font-weight:200;
 	font-size:32px;
 	line-height:40px;
 	color: #FFED07;
 }
+
 /*----2do section---- */
-.titular3{
-	display: flex;
+#arte {
+    width: 1080px;
+    height: 474px;
+    padding: 0px 0px 0px 76px;
+    display: flex;  
+}
+.video {
+    display: flex;
+    width: 756px;
+    padding: 0px 25px 0px 0px;
+    height: 400px;
+}
+.explicacion {
+    width: 452px;
+    height: 400px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    width: 100%;
+}
+.titular{
+	font-family: 'Oxanium';
+	font-weight: 400;
+	font-size: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center; 
+	color: #EAE9E4;
+	padding: 0px 0px 10px 0px;	
+}
+.explicacion p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #EAE9E4;
 }
 #botonagenda{
-	position: absolute;
-	width: 278px;
-	height: 50px;
-	left: 735px;
-	top: 1287px;
-	border-radius: 80px;    
-	background:#EB5A08;
-	/*margin-top:20px?*/
+    position: absolute;
+    width: 260px;
+    height: 48px;
+    left: 828px;
+    top: 1217px;
+    border-radius: 80px;
+    background: #EB5A08;
 }
 #botonagenda a{
 	font-family:'Oxanium';
@@ -188,9 +234,9 @@ footer{
 	flex-direction:column;
 	text-align: center;
 }
-#botontest a:hover{
+#botonagenda a:hover{
     color:#EAE9E4;
-	font-size:30px;
+	font-size:21px;
 }
 
 
@@ -330,26 +376,166 @@ footer{
 }
 
 /*----------------------------- MAIN NOSOTROS --------------------------------------- */
-
-#artistascontentContainer{
-	display: flex;
-	margin-top: 3%;
+#contenido {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    padding: 0px 76px 0px 76px;
+}
+.contenidoderecha {
+    width: 609px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 0px 40px;
+}
+.sloganderecha {
+    margin-bottom: 25px;
+}
+.textoderecha {
+    color: #EAE9E4;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    line-height: 30px;
+    margin-bottom: 25px;
 }
 
-.derechacontentContainer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
-}
-.slogancontainer{
-	margin-top: 30px;
-	margin-bottom: 20px;
+/*----------------------------- MAIN AGENDA --------------------------------------- */
+
+.titulo-agenda {
+    font-family: 'Oxanium';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    color: white;
+    padding-left: 79px;
+    padding-top: 75px;
 }
 
-.textcontainer{
-	color: white;
-	font-size: 2.5vh;
-	width: 70%;
-	margin-bottom: 40px;
+.subtitulo-agenda {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #EAE9E4;
+    padding-left: 79px;
+    padding-top: 5px;
+}
+
+.buscador-agenda {
+    display: flex;
+    align-items:flex-start;
+    width: 780px;
+    justify-content:space-between;
+    padding-top: 25px;
+}
+
+input {
+    border-radius: 25px;
+    width: 420px;
+    padding-left: 10px;
+    height: 24px;
+    font-family: "Poppins";   
+}
+
+.buscar-agenda {
+    padding-left: 76px;
+}
+
+.filtros-agenda {
+    font-family: "Oxanium";
+    color: #EAE9E4;
+    background-color: #EB5A08;
+    border-radius: 46px;
+    width: 221px;
+    height: 27px;
+    padding-left: 16px;
+}
+
+.form-control {
+    border-radius: 46px;
+    font-family: "Poppins";
+    width: 170px;
+    height: 25px;
+    background-color: #1E1E1E;
+    color: white;
+    cursor: pointer;
+}
+
+.agenda-container1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-right: 79px;
+    padding-left: 79px;
+}
+
+.agenda-container2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-right: 79px;
+    padding-left: 79px;
+}
+
+.agenda-container3 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-right: 79px;
+    padding-left: 79px;
+}
+
+.agenda-container4 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-right: 79px;
+    padding-left: 79px;
+}
+
+.agenda-container5 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+    padding-bottom: 220px;
+    padding-right: 79px;
+    padding-left: 79px;
+}
+
+.hover {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.encuentro-container:hover .hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.hover2 {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.local-container:hover .hover2 {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.hover3 {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.sept-container:hover .hover3 {
+    cursor: pointer;
+    opacity: 1;
 }
