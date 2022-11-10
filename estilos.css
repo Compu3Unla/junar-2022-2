@@ -144,10 +144,7 @@ footer{
 	75% {margin-left: -100%;}
 	100% {margin-left: -100%;}
 
-/*----1er section---- */
-#scrolear{
-	
-}
+/*----1er section----*/
 .solfeliz{
 	padding: 0px 735px 539px 257px;
 }
@@ -333,6 +330,7 @@ footer{
 }
 
 /*----------------------------- MAIN NOSOTROS --------------------------------------- */
+
 #artistascontentContainer{
 	display: flex;
 	margin-top: 3%;
