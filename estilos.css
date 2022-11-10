@@ -119,6 +119,7 @@ footer{
 	margin-top:50px;
     overflow: hidden;
 }
+
 .carrusel ul{
 	display: flex; 
 	padding: 0px;
@@ -142,7 +143,6 @@ footer{
 	
 	75% {margin-left: -100%;}
 	100% {margin-left: -100%;}
-}
 
 /*----1er section---- */
 #scrolear{
@@ -194,20 +194,6 @@ footer{
 #botontest a:hover{
     color:#EAE9E4;
 	font-size:30px;
-}
-
-/*-------------------------- MAIN NOSOTROS ----------------------------- */
-.sol{
-	margin-top: 50px;
-	font-weight: 200px;
-	font-size: 20px;
-	color: #EAE9E4;
-}
-.texto-nosotros {
-	font-family: "Poppins";
-	font-size: 22px;
-	line-height: 33px;
-	color: #FFFFFF;
 }
 
 
@@ -344,6 +330,4 @@ footer{
     position: absolute;
     left: 3%;
     top: 50%;
-}
 
-/*-------------------- LO QUE CORRESPONDA --------------------------- */
