@@ -29,9 +29,10 @@ header{
 	mix-blend-mode: normal;
 	background-size: cover;
 }
+
 .logo{
 	align-content: center;
-	margin: 10px 386px 20px 392px;
+	margin: auto;
 }
 
 #usuario{
@@ -41,7 +42,7 @@ header{
 	left:981px;
 	border-radius:70px;
 	background: #0A9372;
-	position: absolute;
+    margin-right: 50px;
 }
 
 #usuario a{
@@ -226,7 +227,7 @@ footer{
 }
 .scrolear{
 	width:596px;
-    padding: 5px 278px 0px 278px;
+    padding: 5px 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -244,8 +245,8 @@ footer{
 }
 /*----2do section ---- */
 #arte {
-    padding: 0px 35px 0px 35px;
     display: flex;  
+    width: 90%;
 }
 .video {
     display: flex;
@@ -253,7 +254,7 @@ footer{
     padding: 0px 25px 0px 0px;
 }
 .explicacion {
-    width: 452px;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -581,17 +582,119 @@ text-decoration: underline;
 .botonenviar a:hover{
     font-size:22px;
 }
-.navegacion{
-		display:none;
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* .navegacion{
+		display:none;
+} */
 
 /*----------------------------------RESPONSIVE----------------------------------------------*/
 
 
 	
 @media screen and (max-width:360px){
-	.navegacion{
+	/* .navegacion{
 		display: inline;
-	}
-	
+	} */
+
+    body {
+        font-size: 1em;
+    }
+    nav ul{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .saludo, .artista-container{
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .carrusel{
+        display: none;
+    }        
+
+    #arte, .scrolear {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .explicacion {
+        width: 100%;
+    }
+
+    .explicacion p {
+        font-size: 1em;
+        line-height: 1.2;
+    }
+
+    .explicacion h1 {
+        font-size: 1.5em;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .scrolear {
+        width: 100%;    
+    }
+
+    .scrolear p {
+        padding: 20px 0 20px 10px;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container, .form-container3 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .form-container3 {
+        padding: 40px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .form-direccion {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container3 h1 {
+        font-size: 2em;
+        justify-content: center;
+    }
+
+    .controls, .controls3 {
+        width: 80%;
+    }
+    .parent {
+        flex-direction: column;
+    }
+
+    #usuario {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
 }
