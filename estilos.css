@@ -582,8 +582,15 @@ text-decoration: underline;
     font-size:22px;
 }
 
-/*- MEDIA AQUARIS DEL FORMULARIO- */
-@media screen and (max-width:360px) {
-	
 
+/*----------------------------------RESPONSIVE----------------------------------------------*/
+
+.navegacion{
+		display:none;
+}
+	
+@media screen and (max-width:360px){
+	.navegacion{
+		display: inline;
+	}
 }
