@@ -243,7 +243,7 @@ footer{
 	color: #FFED07;
 }
 /*----2do section ---- */
-.arte {
+#arte {
     padding: 0px 35px 0px 35px;
     display: flex;  
 }
@@ -581,16 +581,17 @@ text-decoration: underline;
 .botonenviar a:hover{
     font-size:22px;
 }
-
-
-/*----------------------------------RESPONSIVE----------------------------------------------*/
-
 .navegacion{
 		display:none;
 }
+
+/*----------------------------------RESPONSIVE----------------------------------------------*/
+
+
 	
 @media screen and (max-width:360px){
 	.navegacion{
 		display: inline;
 	}
+	
 }
